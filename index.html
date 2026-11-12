@@ -3,146 +3,365 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>GroveWings - Precision Farming Solutions</title>
+		<title>GroveWings - Precision Farming from the Sky</title>
+		<meta
+			name="description"
+			content="GroveWings pairs drones with AI to detect crop disease early, spray only where it's needed, and turn every flight into decisions farmers can act on."
+		/>
+		<script>
+			document.documentElement.classList.add('js');
+		</script>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link rel="apple-touch-icon" href="favicon.png" />
+		<meta name="theme-color" content="#07170d" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<nav>
-			<a href="#home" class="logo">GroveWings</a>
-			<button
-				class="menu-toggle"
-				aria-label="Open menu"
-				aria-expanded="false"
-				aria-controls="nav-menu"
-			>
-				<span></span><span></span><span></span>
-			</button>
-			<div class="nav-links" id="nav-menu">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About Us</a></li>
-					<li><a href="#solutions">Our Solutions</a></li>
-					<li><a href="#contact">Contact Us</a></li>
-				</ul>
+		<nav class="site-nav">
+			<div class="nav-inner">
+				<a href="#home" class="logo" aria-label="GroveWings home">
+					<img class="logo-mark" src="logo.png" alt="" width="817" height="224" />
+					GroveWings
+				</a>
+				<button
+					class="menu-toggle"
+					aria-label="Open menu"
+					aria-expanded="false"
+					aria-controls="nav-menu"
+				>
+					<span></span><span></span><span></span>
+				</button>
+				<div class="nav-links" id="nav-menu">
+					<ul>
+						<li><a href="#how">How it works</a></li>
+						<li><a href="#solutions">Solutions</a></li>
+						<li><a href="#app">App</a></li>
+						<li><a href="#about">About</a></li>
+						<li>
+							<a href="#contact" class="btn btn-primary btn-sm">
+								Join the pilot
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
 		<main>
-			<section id="home">
-				<div class="carousel">
-					<div class="carousel-slide">
-						<img src="drone-spraying.jpg" alt="Drone Spraying Crops" />
-						<img src="drone-tractor.jpg" alt="Drone and Tractor" />
-						<img src="smart-farm.jpg" alt="Smart Farming" />
-					</div>
-					<button class="carousel-button prev" aria-label="Previous slide">
-						&#10094;
-					</button>
-					<button class="carousel-button next" aria-label="Next slide">
-						&#10095;
-					</button>
-				</div>
-
-				<div class="tagline">
-					<h1>
-						Revolutionizing Agriculture with Precision & Sustainability
+			<!-- Hero -->
+			<section id="home" class="hero">
+				<img
+					class="hero-bg"
+					src="drone-spraying.jpg"
+					alt=""
+					fetchpriority="high"
+				/>
+				<div class="container hero-content">
+					<span class="badge reveal">
+						<span class="badge-dot"></span>
+						Now onboarding early adopter farms
+					</span>
+					<h1 class="reveal">
+						Precision farming,<br />
+						<span class="accent">from the sky.</span>
 					</h1>
+					<p class="hero-sub reveal">
+						GroveWings pairs drones with AI to spot crop disease
+						early, spray only where it's needed, and turn every
+						flight into decisions you can act on.
+					</p>
+					<div class="hero-ctas reveal">
+						<a href="#contact" class="btn btn-primary">
+							Become an early adopter
+							<i class="fas fa-arrow-right"></i>
+						</a>
+						<a href="#how" class="btn btn-ghost">See how it works</a>
+					</div>
+					<ul class="hero-tags reveal">
+						<li><i class="fas fa-microscope"></i> AI disease detection</li>
+						<li><i class="fas fa-crosshairs"></i> Targeted spraying</li>
+						<li><i class="fas fa-chart-line"></i> Field analytics</li>
+					</ul>
+				</div>
+				<a href="#how" class="scroll-hint" aria-label="Scroll to How it works">
+					<span></span>
+				</a>
+			</section>
+
+			<!-- How it works -->
+			<section id="how" class="section">
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">How it works</span>
+						<h2>From flight to field action in three steps</h2>
+					</div>
+					<ol class="steps">
+						<li class="step reveal">
+							<span class="step-num">01</span>
+							<div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+							<h3>Fly</h3>
+							<p>
+								Drones survey your fields and capture
+								high-resolution imagery of every row.
+							</p>
+						</li>
+						<li class="step reveal">
+							<span class="step-num">02</span>
+							<div class="step-icon"><i class="fas fa-brain"></i></div>
+							<h3>Analyze</h3>
+							<p>
+								Our AI models flag disease, pest pressure and
+								stressed zones, mapped to where they are.
+							</p>
+						</li>
+						<li class="step reveal">
+							<span class="step-num">03</span>
+							<div class="step-icon"><i class="fas fa-seedling"></i></div>
+							<h3>Act</h3>
+							<p>
+								Treat only the areas that need it, and track
+								how your crop responds over time.
+							</p>
+						</li>
+					</ol>
 				</div>
 			</section>
 
-			<section id="about" class="about-us">
-				<h2>About Us</h2>
-				<p>
-					At GroveWings, we are dedicated to transforming modern
-					agriculture. Our precision farming solutions harness the
-					power of drones and AI to provide real-time data on crop
-					health, soil conditions, and pest infestations. With our
-					innovative technology, we aim to enhance productivity,
-					sustainability, and profitability for farmers worldwide.
-				</p>
-			</section>
-
-			<section id="solutions" class="solutions">
-				<h2>Our Solutions</h2>
-				<div class="solution-list">
-					<div class="solution-item">
-						<div class="solution-title">
-							<i class="fas fa-microscope"></i>
+			<!-- Solutions -->
+			<section id="solutions" class="section section-dark">
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">Solutions</span>
+						<h2>Everything your fields need, in one platform</h2>
+						<p>
+							Built around the decisions farmers make every
+							season: what's wrong, where, and what to do next.
+						</p>
+					</div>
+					<div class="solution-grid">
+						<article class="solution-card reveal">
+							<div class="card-icon"><i class="fas fa-microscope"></i></div>
 							<h3>Disease Detection</h3>
-						</div>
-						<p>
-							Utilize advanced drone technology and AI to detect
-							crop diseases early, ensuring timely intervention
-							for healthier yields.
-						</p>
-					</div>
-					<div class="solution-item">
-						<div class="solution-title">
-							<i class="fas fa-spray-can"></i>
+							<p>
+								Advanced drone imaging and AI detect crop
+								diseases early, so you can step in before they
+								spread.
+							</p>
+						</article>
+						<article class="solution-card reveal">
+							<div class="card-icon"><i class="fas fa-spray-can"></i></div>
 							<h3>Precision Spraying</h3>
-						</div>
-						<p>
-							Apply targeted supplements to manage pesticides
-							efficiently, minimizing waste and environmental
-							impact.
-						</p>
-					</div>
-					<div class="solution-item">
-						<div class="solution-title">
-							<i class="fas fa-chart-line"></i>
+							<p>
+								Apply treatments only where they're needed,
+								cutting waste and environmental impact.
+							</p>
+						</article>
+						<article class="solution-card reveal">
+							<div class="card-icon"><i class="fas fa-chart-line"></i></div>
 							<h3>Data Analytics</h3>
-						</div>
-						<p>
-							Analyze real-time data on crop health, pest
-							activity, and growth patterns to make informed
-							decisions.
-						</p>
-					</div>
-					<div class="solution-item">
-						<div class="solution-title">
-							<i class="fas fa-lightbulb"></i>
+							<p>
+								Follow crop health, pest activity and growth
+								patterns across your fields as they change.
+							</p>
+						</article>
+						<article class="solution-card reveal">
+							<div class="card-icon"><i class="fas fa-lightbulb"></i></div>
 							<h3>Data-Driven Insights</h3>
+							<p>
+								Turn field data into clear recommendations that
+								improve productivity and sustainability.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- App showcase -->
+			<section id="app" class="section">
+				<div class="container split">
+					<div class="split-media reveal">
+						<img
+							src="phone.jpg"
+							alt="A phone scanning a cassava leaf for signs of disease"
+							loading="lazy"
+						/>
+						<div class="media-chip">
+							<i class="fas fa-circle-check"></i>
+							Leaf scanned
 						</div>
+					</div>
+					<div class="split-text reveal">
+						<span class="eyebrow">Mobile app</span>
+						<h2>Diagnose a leaf in seconds, right in the field</h2>
 						<p>
-							Leverage actionable insights to improve
-							productivity, enhance sustainability, and maximize
-							profitability.
+							Point your phone at a plant and the GroveWings app
+							checks it for signs of disease, no lab and no
+							waiting.
+						</p>
+						<ul class="checklist">
+							<li><i class="fas fa-check"></i> On-the-spot disease checks from a photo</li>
+							<li><i class="fas fa-check"></i> Results that sit alongside your drone data</li>
+							<li><i class="fas fa-check"></i> Built for real conditions in the field</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section id="about" class="section section-tint">
+				<div class="container split split-reverse">
+					<div class="split-media reveal">
+						<img
+							src="drone-tractor.jpg"
+							alt="A spraying drone flying beside a tractor over a green field"
+							loading="lazy"
+						/>
+					</div>
+					<div class="split-text reveal">
+						<span class="eyebrow">About GroveWings</span>
+						<h2>Built to make modern agriculture smarter</h2>
+						<p>
+							At GroveWings, we are dedicated to transforming
+							modern agriculture. Our precision farming solutions
+							harness drones and AI to provide real-time data on
+							crop health, soil conditions and pest infestations.
+						</p>
+						<p>
+							We're building technology that helps farmers raise
+							productivity, sustainability and profitability, and
+							we're doing it hand in hand with the farms that use
+							it.
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section id="contact" class="contact-us">
-				<h2>Contact Us</h2>
-				<p>
-					We would love to hear from you! Reach out to us via phone,
-					email, or visit us at our office.
-				</p>
-				<div class="contact-info">
-					<p>
-						<i class="fas fa-phone-alt"></i>
-						<strong>Phone:</strong>
-						<a href="tel:+21652444176">+216 52 444 176</a>
-					</p>
-					<p>
-						<i class="fas fa-envelope"></i> <strong>Email:</strong>
-						<a href="mailto:mohamedsayhii@outlook.com"
-							>mohamedsayhii@outlook.com</a
-						>
-					</p>
-					<p>
-						<i class="fas fa-map-marker-alt"></i>
-						<strong>Address:</strong> Skanes, Monastir 5060
-					</p>
+			<!-- Early adopters -->
+			<section class="section">
+				<div class="container">
+					<div class="pilot reveal">
+						<div class="pilot-text">
+							<span class="eyebrow eyebrow-light">Early adopter program</span>
+							<h2>Shape the future of farming with us</h2>
+							<p>
+								We're working closely with a small group of
+								early adopter farms. Join now and help build
+								the product around how you actually farm.
+							</p>
+						</div>
+						<ul class="pilot-perks">
+							<li>
+								<i class="fas fa-handshake"></i>
+								<div>
+									<strong>Direct line to the team</strong>
+									<span>Work with the people building GroveWings.</span>
+								</div>
+							</li>
+							<li>
+								<i class="fas fa-bolt"></i>
+								<div>
+									<strong>First access</strong>
+									<span>Try new features before anyone else.</span>
+								</div>
+							</li>
+							<li>
+								<i class="fas fa-comments"></i>
+								<div>
+									<strong>Your feedback, built in</strong>
+									<span>Help decide what we build next.</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact" class="section section-tint">
+				<div class="container contact">
+					<div class="contact-text reveal">
+						<span class="eyebrow">Contact</span>
+						<h2>Let's talk about your fields</h2>
+						<p>
+							Want to join as an early adopter, or just curious?
+							Send us a message and we'll get back to you.
+						</p>
+						<ul class="contact-info">
+							<li>
+								<i class="fas fa-phone"></i>
+								<a href="tel:+21652444176">+216 52 444 176</a>
+							</li>
+							<li>
+								<i class="fas fa-envelope"></i>
+								<a href="mailto:mohamedsayhii@outlook.com">mohamedsayhii@outlook.com</a>
+							</li>
+							<li>
+								<i class="fas fa-location-dot"></i>
+								<span>Skanes, Monastir 5060, Tunisia</span>
+							</li>
+						</ul>
+					</div>
+					<form class="contact-form reveal" id="contact-form">
+						<div class="form-row">
+							<label>
+								Name
+								<input type="text" name="name" required autocomplete="name" />
+							</label>
+							<label>
+								Email
+								<input type="email" name="email" required autocomplete="email" />
+							</label>
+						</div>
+						<label>
+							Farm / organization
+							<input type="text" name="farm" autocomplete="organization" />
+						</label>
+						<label>
+							Message
+							<textarea name="message" rows="4" required></textarea>
+						</label>
+						<button type="submit" class="btn btn-primary btn-block">
+							Send message <i class="fas fa-paper-plane"></i>
+						</button>
+						<p class="form-note">
+							Opens your email app with the message ready to send.
+						</p>
+					</form>
 				</div>
 			</section>
 		</main>
+
 		<footer>
-			<p>&copy; 2026 GroveWings. All rights reserved.</p>
+			<div class="container footer-inner">
+				<div class="footer-brand">
+					<a href="#home" class="logo">
+						<img class="logo-mark" src="logo.png" alt="" width="817" height="224" />
+						GroveWings
+					</a>
+					<p>Precision farming from the sky.</p>
+				</div>
+				<nav class="footer-links" aria-label="Footer">
+					<a href="#how">How it works</a>
+					<a href="#solutions">Solutions</a>
+					<a href="#app">App</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+			<div class="container footer-bottom">
+				<p>&copy; 2026 GroveWings. All rights reserved.</p>
+			</div>
 		</footer>
 	</body>
 </html>
