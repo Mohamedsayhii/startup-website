@@ -39,3 +39,30 @@ function startCarousel() {
 window.addEventListener('resize', () => showSlide(slideIndex)); // Re-align on resize
 
 startCarousel();
+
+// Mobile menu
+const nav = document.querySelector('nav');
+const menuToggle = document.querySelector('.menu-toggle');
+
+function setMenuOpen(open) {
+	nav.classList.toggle('open', open);
+	menuToggle.setAttribute('aria-expanded', String(open));
+	menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+}
+
+menuToggle.addEventListener('click', () => {
+	setMenuOpen(!nav.classList.contains('open'));
+});
+
+// Close the menu after jumping to a section, on Escape, or when the screen widens
+nav.querySelectorAll('a').forEach((link) =>
+	link.addEventListener('click', () => setMenuOpen(false))
+);
+
+document.addEventListener('keydown', (e) => {
+	if (e.key === 'Escape') setMenuOpen(false);
+});
+
+window.matchMedia('(min-width: 769px)').addEventListener('change', (e) => {
+	if (e.matches) setMenuOpen(false);
+});

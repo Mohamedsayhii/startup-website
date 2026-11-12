@@ -4,37 +4,145 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>GroveWings - Precision Farming Solutions</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<nav>
-			<div class="logo">GroveWings</div>
-			<div class="nav-links">
+			<a href="#home" class="logo">GroveWings</a>
+			<button
+				class="menu-toggle"
+				aria-label="Open menu"
+				aria-expanded="false"
+				aria-controls="nav-menu"
+			>
+				<span></span><span></span><span></span>
+			</button>
+			<div class="nav-links" id="nav-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="solutions.html">Our Solutions</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#solutions">Our Solutions</a></li>
+					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
 		<main>
-			<div class="carousel">
-				<div class="carousel-slide">
-					<img src="drone-spraying.jpg" alt="Drone Spraying Crops" />
-					<img src="drone-tractor.jpg" alt="Drone and Tractor" />
-					<img src="smart-farm.jpg" alt="Smart Farming" />
+			<section id="home">
+				<div class="carousel">
+					<div class="carousel-slide">
+						<img src="drone-spraying.jpg" alt="Drone Spraying Crops" />
+						<img src="drone-tractor.jpg" alt="Drone and Tractor" />
+						<img src="smart-farm.jpg" alt="Smart Farming" />
+					</div>
+					<button class="carousel-button prev" aria-label="Previous slide">
+						&#10094;
+					</button>
+					<button class="carousel-button next" aria-label="Next slide">
+						&#10095;
+					</button>
 				</div>
-				<button class="carousel-button prev">&#10094;</button>
-				<button class="carousel-button next">&#10095;</button>
-			</div>
 
-			<section class="tagline">
-				<h1>
-					Revolutionizing Agriculture with Precision & Sustainability
-				</h1>
+				<div class="tagline">
+					<h1>
+						Revolutionizing Agriculture with Precision & Sustainability
+					</h1>
+				</div>
+			</section>
+
+			<section id="about" class="about-us">
+				<h2>About Us</h2>
+				<p>
+					At GroveWings, we are dedicated to transforming modern
+					agriculture. Our precision farming solutions harness the
+					power of drones and AI to provide real-time data on crop
+					health, soil conditions, and pest infestations. With our
+					innovative technology, we aim to enhance productivity,
+					sustainability, and profitability for farmers worldwide.
+				</p>
+			</section>
+
+			<section id="solutions" class="solutions">
+				<h2>Our Solutions</h2>
+				<div class="solution-list">
+					<div class="solution-item">
+						<div class="solution-title">
+							<i class="fas fa-microscope"></i>
+							<h3>Disease Detection</h3>
+						</div>
+						<p>
+							Utilize advanced drone technology and AI to detect
+							crop diseases early, ensuring timely intervention
+							for healthier yields.
+						</p>
+					</div>
+					<div class="solution-item">
+						<div class="solution-title">
+							<i class="fas fa-spray-can"></i>
+							<h3>Precision Spraying</h3>
+						</div>
+						<p>
+							Apply targeted supplements to manage pesticides
+							efficiently, minimizing waste and environmental
+							impact.
+						</p>
+					</div>
+					<div class="solution-item">
+						<div class="solution-title">
+							<i class="fas fa-chart-line"></i>
+							<h3>Data Analytics</h3>
+						</div>
+						<p>
+							Analyze real-time data on crop health, pest
+							activity, and growth patterns to make informed
+							decisions.
+						</p>
+					</div>
+					<div class="solution-item">
+						<div class="solution-title">
+							<i class="fas fa-lightbulb"></i>
+							<h3>Data-Driven Insights</h3>
+						</div>
+						<p>
+							Leverage actionable insights to improve
+							productivity, enhance sustainability, and maximize
+							profitability.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact-us">
+				<h2>Contact Us</h2>
+				<p>
+					We would love to hear from you! Reach out to us via phone,
+					email, or visit us at our office.
+				</p>
+				<div class="contact-info">
+					<p>
+						<i class="fas fa-phone-alt"></i>
+						<strong>Phone:</strong>
+						<a href="tel:+21652444176">+216 52 444 176</a>
+					</p>
+					<p>
+						<i class="fas fa-envelope"></i> <strong>Email:</strong>
+						<a href="mailto:mohamedsayhii@outlook.com"
+							>mohamedsayhii@outlook.com</a
+						>
+					</p>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>
+						<strong>Address:</strong> Skanes, Monastir 5060
+					</p>
+				</div>
 			</section>
 		</main>
+		<footer>
+			<p>&copy; 2025 GroveWings. All rights reserved.</p>
+		</footer>
 	</body>
 </html>
